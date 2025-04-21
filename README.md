@@ -2,7 +2,7 @@
 [![Python Versions](https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-9fbf1f)](https://www.python.org/)
 [![MIT License](https://shields.io/badge/licence-MIT-9fbf1f)](LICENSE.md)
 
-![logo](res/lettermark.png)
+![logo](res/wordmark.png)
 
 ## What is Chordamap?
 Chordamap is a Python tool that allows you to send MIDI chord data as simply as possible, that way you can easily input chords on a computer without the need for a MIDI keyboard. Chordamap also features the ability to save a sequence of chords to a MIDI file for later use or to import into other applications.
