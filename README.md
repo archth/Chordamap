@@ -5,7 +5,7 @@
 ![logo](res/wordmark.png)
 
 ## What is Chordamap?
-Chordamap is a Python tool that allows you to send MIDI chord data as simply as possible, that way you can easily input chords on a computer without the need for a MIDI keyboard. Chordamap also features the ability to save a sequence of chords to a MIDI file for later use or to import into other applications.
+Chordamap is a Python tool that allows you to send MIDI chord data as simply as possible, that way you can easily input chords on a computer without the need for a MIDI keyboard. Chordamap also features the ability to save a sequence of chords to a MIDI file for later use or for importing into other applications.
 
 'Chordamap' is a portmanteau of 'chord array map', a way to describe a MIDI controller that has buttons for chords arranged in an array. It can referrer to any chord based MIDI controller, not just this one.
 
@@ -17,9 +17,10 @@ Anyone is welcome to modify, branch, rewrite or create new tools based on the co
 Once open you can select a MIDI port to send MIDI note data too. Each button when held, will play the associated chord, sorted by chord quality. Chord inversion is automatically applied to each chord based on the selected key. Holding shift or control while pressing a button will shift the octave up and down respectively, allowing a range of three octaves when inputting chord progressions.
 
 Each time you press a chord button, the MIDI data is written to the sequence. From the 'Sequence' menu you can save the sequence to a MIDI file or you can clear the sequence.
+You can preview a chord by right clicking the chord button, allowing you you heard a chord without adding to the sequence.
 
 ## Installation
-You can download a compiled build of the program in the releases tab for ease of use.
+The easiest way to start using Chordamap is to download the lastest compiled build of the program in the [releases](https://github.com/archth/Chordamap/releases) tab.
 
 If you wish to use the program from the source code you need to first install the two dependencies, [mido](https://github.com/mido/mido) and [python-rtmidi](https://github.com/SpotlightKid/python-rtmidi) via this command.
 ```
