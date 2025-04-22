@@ -9,7 +9,7 @@ Chordamap is a Python tool that allows you to send MIDI chord data as simply as 
 
 'Chordamap' is a portmanteau of 'chord array map', a way to describe a MIDI controller that has buttons for chords arranged in an array. It can referrer to any chord based MIDI controller, not just this one.
 
-This is a tool I developed for my own use while composing music, I will work on it/update it in my spare time.
+This is a tool I developed for my own use for composing music, I will work on it/update it in my spare time.
 
 Anyone is welcome to modify, branch, rewrite or create new tools based on the code or off the same idea. I would greatly appreciate more tools like this be developed to make music composition faster and easier.
 
