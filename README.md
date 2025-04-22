@@ -11,13 +11,13 @@ Chordamap is a Python tool that allows you to send MIDI chord data as simply as 
 
 This is a tool I developed for my own use for composing music, I will work on it/update it in my spare time.
 
-Anyone is welcome to modify, branch, rewrite or create new tools based on the code or off the same idea. I would greatly appreciate more tools like this be developed to make music composition faster and easier.
+Anyone is welcome to modify, branch, rewrite or create new tools based on the code or off the same idea. I would greatly appreciate more tools like this to be developed to make music composition faster and easier.
 
 ## How to use
 Once open you can select a MIDI port to send MIDI note data too. Each button when held, will play the associated chord, sorted by chord quality. Chord inversion is automatically applied to each chord based on the selected key. Holding shift or control while pressing a button will shift the octave up and down respectively, allowing a range of three octaves when inputting chord progressions.
 
 Each time you press a chord button, the MIDI data is written to the sequence. From the 'Sequence' menu you can save the sequence to a MIDI file or you can clear the sequence.
-You can preview a chord by right clicking the chord button, allowing you you heard a chord without adding to the sequence.
+You can preview a chord by right clicking the chord button, allowing you you hear a chord without adding it to the sequence.
 
 ## Installation
 The easiest way to start using Chordamap is to download the lastest compiled build of the program in the [releases](https://github.com/archth/Chordamap/releases) tab.
