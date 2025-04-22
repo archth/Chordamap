@@ -31,7 +31,9 @@ python3 -m pip install mido[ports-rtmidi]
 If you try to use the above command in Python 3.13 you will be prompted to compile python-rtmidi's C++ components.
 
 ## Getting MIDI into a DAW
-To use Chordamap with a DAW you need a MIDI port that can route to your DAW. [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html) is the simplest solution.
+To use Chordamap with a DAW you need a MIDI port that can route into it.
+
+[loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html) is the recommended solution for this. 
 
 Start loopMIDI before opening Chordamap. After Chordamap opens, you can select loopMIDI from the drop down list of available MIDI ports.
 
