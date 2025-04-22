@@ -1,0 +1,1 @@
+pyinstaller --onefile --icon=res/icon.ico --hidden-import=mido.backends.rtmidi Chordamap.py
