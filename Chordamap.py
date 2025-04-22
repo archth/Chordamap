@@ -50,6 +50,7 @@ settings = {
 
 row = 0
 port = ""
+port_name = ""
 available_ports = mido.get_output_names()
 
 lock = threading.Lock()
@@ -109,8 +110,9 @@ def port_select(event):
 
 # Set Port
 def set_port(x):
-    global port
+    global port, port_name
 
+    port_name = x
     if port != "":
         port.close()
     port = mido.open_output(x)
@@ -131,6 +133,12 @@ def port_initialize():
         set_port(config["DEFAULT"]["DefaultPort"])
     else:
         set_port(available_ports[0])
+
+    try:
+        if portlist.get != port_name:
+            portlist.set(port_name)
+    except:
+        pass
         
 
 # ---------- MIDI Playback ----------
@@ -354,8 +362,8 @@ menubar.add_cascade(label="Sequence", menu=sequencemenu)
 # MIDI Menu
 midimenu = tk.Menu(menubar, tearoff=0)
 midimenu.add_command(label="Set as Default Port",command=(set_default_port))
-midimenu.add_command(label="MIDI Panic",command=(midi_panic))
 midimenu.add_command(label="Refresh MIDI Ports",command=(port_initialize))
+midimenu.add_command(label="MIDI Panic",command=(midi_panic))
 menubar.add_cascade(label="MIDI", menu=midimenu)
 
 root.config(menu=menubar)
@@ -371,7 +379,7 @@ apply_theme(portlabel)
 # Select Port
 portlist = ttk.Combobox(port_frame, values=available_ports, width=30)
 portlist.pack(side="right")
-portlist.set(available_ports[0])
+portlist.set(port_name)
 portlist.bind("<<ComboboxSelected>>", port_select)
 apply_theme(portlist)
 
